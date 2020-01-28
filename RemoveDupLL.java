@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Question1 {
+public class remDup {
     static private Node head;
     static class Node
     {
@@ -80,7 +80,7 @@ public class Question1 {
         
     }
 public static void main(String[] args) {
-        Question1 li = new Question1();
+        remDup li = new remDup();
         Scanner input = new Scanner(System.in);
         int size;
         System.out.println("Enter the size of linked list:");
