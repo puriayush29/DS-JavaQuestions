@@ -1,3 +1,9 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ds.arrays;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -34,7 +40,7 @@ public class Question26 {
             curr.next = new_element;
         }
     }
-    static void dequeue(Queue front)
+    static void deque(Queue front)
     {
         flag =1;
         System.out.println("Performing Dequeue");
@@ -45,9 +51,9 @@ public class Question26 {
         }
         else
         {
-            System.out.println(front.data + " element popped");
+            System.out.println(front.data + " element deleted");
             front = front.next;
-            dequeue(front);
+            deque(front);
         }
     }
     static void display()
@@ -104,7 +110,7 @@ public class Question26 {
         display();
         frontQueue();
         rearQueue();
-        dequeue(front);
+        deque(front);
         frontQueue();
         rearQueue();
                 
