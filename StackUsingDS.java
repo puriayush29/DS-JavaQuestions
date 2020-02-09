@@ -2,13 +2,13 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 public class Question25 {
-    private static Node top;
-    static Node top1;
-   static class Node
+    private static Stack top;
+    static Stack top1;
+   static class Stack
     {
         int data;
-        Node next;
-        Node(int d)
+        Stack next;
+        Stack(int d)
             
         {
             data = d;
@@ -16,7 +16,7 @@ public class Question25 {
     }
     static void push(int data)
     {
-        Node new_node = new Node(data);
+        Stack new_node = new Stack(data);
         new_node.next = null;
         if(top == null)
         {
@@ -29,7 +29,7 @@ public class Question25 {
         }
                 
     }
-    static void pop(Node top)
+    static void pop(Stack top)
     {
         if(top == null)
         {
@@ -50,7 +50,7 @@ public class Question25 {
         if(top == null){
             System.out.println("No element is present in stack");
         }
-        Node curr = top;
+        Stack curr = top;
         while(curr!=null)
         {
             System.out.println(curr.data);
@@ -63,7 +63,7 @@ public class Question25 {
         if(top1 == null){
             System.out.println("No element is present in stack");
         }
-        Node curr = top1;
+        Stack curr = top1;
         while(curr!=null)
         {
             System.out.println(curr.data);
